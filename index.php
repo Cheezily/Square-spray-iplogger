@@ -35,7 +35,131 @@
 <html>
 <head>
   <title>Welcome!</title>
-  <link rel='stylesheet' href='main.css'>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: coral;
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: scroll;
+    }
+
+    header {
+      margin-top: 0;
+      padding: 4px 0 0 20px;
+      background: black;
+      height: 35px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.8em;
+      color: coral;
+    }
+
+    table {
+      margin: 15px auto;
+      text-align: center;
+      min-width: 1000px;
+      border-collapse: collapse;
+    }
+
+    th {
+      font-size: 16px;
+      padding: 3px;
+    }
+
+    .legend {
+      background: none;
+      border-bottom: 1px solid #bbb;
+    }
+
+    .id {
+      width: 100px;
+    }
+
+    .ip {
+      width: 170px;
+    }
+
+    .when {
+      width: 230px;
+    }
+
+    .city, .region {
+      width: 165px;
+    }
+
+    .country {
+      width: 100px;
+    }
+
+    .row, .commentForm {
+      background: rgba(50,50,50,.9);
+    }
+
+    .row:nth-of-type(2n+0), th {
+      background: rgba(20,20,20,.9);
+    }
+
+    td {
+      margin: 0;
+      height: 20px;
+    }
+
+    .commentForm {
+      width: 800px;
+      margin: 0 auto;
+      border: 4px solid coral;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    input[type="submit"] {
+      background: coral;
+      color: white;
+      border-radius: 4px;
+      border: none;
+      height: 30px;
+      width: 90px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    .commentForm h3 {
+      margin-top: 0;
+    }
+
+    input[type='text'] {
+      width: 610px;
+      height: 25px;
+      border-radius: 4px;
+      border: 1px solid coral;
+    }
+
+    .comment {
+      max-width: 300px;
+    }
+
+    .target {
+      width: 100%;
+      height: 100%;
+      background: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: -9999;
+      opacity: .5;
+    }
+
+    .star {
+      position: absolute;
+    }
+  </style>
 </head>
 
 <body>
@@ -231,6 +355,17 @@
     }
 
     showStars();
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92837500-4', 'auto');
+    ga('send', 'pageview');
+
   </script>
 </body>
 </html>
