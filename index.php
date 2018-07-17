@@ -1,9 +1,8 @@
 <?php
-error_reporting(-1);
-ini_set("display_errors", "1");
-ini_set("log_errors", 1);
-ini_set("error_log", "/tmp/php-error.log");
-
+  error_reporting(-1);
+  ini_set("display_errors", "1");
+  ini_set("log_errors", 1);
+  ini_set("error_log", "/tmp/php-error.log");
 
   require_once('config/config.php');
   require_once('config/db.php');
@@ -220,6 +219,11 @@ ini_set("error_log", "/tmp/php-error.log");
       border-radius: 50%;
     }
 
+    .ipnotice {
+      font-size: 11px;
+      text-align: center;
+    }
+
   </style>
 </head>
 
@@ -242,6 +246,10 @@ ini_set("error_log", "/tmp/php-error.log");
           <input class='submit' type='submit' name='submit_comment' value='Submit'>
         </form>
       </div>
+    </div>
+    <div class='ipnotice'>
+      <p>Messages starting with a number will not be displayed (Stop posting IP addresses!)</p>
+      <p>以数字开头的消息将不会显示</p>
     </div>
   <?php } ?>
 
